@@ -21,10 +21,10 @@ public class Aula2{
 			
 			if( media >= 120) {
 			
-			System.out.println("Passou com média: " + media);
+			System.out.println("Passou com média: " + String.format("%.1f", media));
 			
 			} else {
-				System.out.println("Média: " + media);
+				System.out.println("Média: " + String.format("%.1f", media));
 				System.out.println("Ficou em recuperação!");
 				System.out.println("\nDigite a nota da substituição:");
 		
@@ -38,6 +38,7 @@ public class Aula2{
 			
 				if( media >= 120){
 					System.out.println("Passou com substituição!");
+					System.out.println("Média: " + String.format("%.1f", media));
 				}else{
 					System.out.println("Poha nem com substituição é capaz de passar...");
 				}
