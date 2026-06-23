@@ -1,0 +1,30 @@
+nav {
+    background-color: #9eebff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 20px
+    
+}
+
+#logo{
+    width: 120px;
+}
+
+#menu{
+    width: 30px;
+}
+h1{
+    text-align: center;
+}
+main{
+    align-items: center;
+}
+form{
+    background-color: background;
+    align-content: center;
+    align-items: center;
+}
+footer{
+    text-align: center;
+}
