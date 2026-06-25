@@ -17,14 +17,73 @@ nav {
 h1{
     text-align: center;
 }
+
+body{
+    background-color: antiquewhite;
+    font-family: Arial, sans-serif;
+}
+
 main{
+    background-color: rosybrown;
+    padding: 20px;
+    border-color: black;
+    border-width: 2px;
+    border-style: solid;
+    margin-left: 25%;
+    margin-right: 25%;
+    margin-bottom: 30%;
     align-items: center;
+    text-align: center;
 }
 form{
-    background-color: background;
-    align-content: center;
-    align-items: center;
 }
+
+.input-box{
+    margin: 10px 30px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+}
+
+.input-form{
+    padding: 6px;
+    font-family: monospace;
+    background-color: black;
+    color: gold;
+    outline-color: gold;
+}
+
+#notif{
+    text-align: left;
+    margin: 20px 0px 20px 20px;
+}
+
+#avisos label{
+    cursor: pointer;
+}
+
+input[type="checkbox"]{
+    cursor: pointer;
+    accent-color: black;
+    transform: scale(1.5);
+}
+
+input[type="submit"]{
+    cursor: pointer;
+    color: white;
+    background-color: black;
+    font-size: 14pt;
+    padding: 5px 20px;
+    border-radius: 8px;
+    transition: 1s;
+}
+
+input[type="submit"]:hover {
+    background-color: darkblue;
+    color: gold;
+    transition: 1s;
+}
+
 footer{
     text-align: center;
 }
