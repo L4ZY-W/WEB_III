@@ -1,5 +1,5 @@
 nav {
-    background-color: #9eebff;
+    background-color: #74535c;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -19,6 +19,9 @@ h1{
 }
 
 body{
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url('https://img.magnific.com/free-photo/tropical-beach-paradise-with-palm-trees-turquoise-water_23-2151975534.jpg?semt=ais_hybrid&w=740&q=80');
     background-color: antiquewhite;
     font-family: Arial, sans-serif;
 }
