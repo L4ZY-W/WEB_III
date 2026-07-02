@@ -1,0 +1,191 @@
+/* ==========================================================================
+   1. CONFIGURAÇÕES GERAIS
+   ========================================================================== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+}
+
+body {
+  background-color: #F4EEF7; /* Roxo bem clarinho de fundo */
+  color: #2D3436;
+  line-height: 1.6;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh; /* Centraliza o conteúdo verticalmente na tela */
+}
+
+/* ==========================================================================
+   2. ESTRUTURA DO CONTAINER (CORRIGIDO SEM VARIÁVEIS)
+   ========================================================================== */
+.container {
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+  background: #FFFFFF;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+  overflow: hidden;
+}
+
+/* Cabeçalho padrão */
+header {
+  background: linear-gradient(135deg, #3B0D47, #5A186F); /* Degradê do Roxo Escuro para o Médio */
+  color: #FFFFFF;
+  padding: 40px 20px;
+  text-align: center;
+}
+
+header h1 {
+  font-size: 2.5rem;
+  margin-bottom: 8px;
+  letter-spacing: 1px;
+}
+
+header h2, header p {
+  font-size: 1.2rem;
+  font-weight: 300;
+  opacity: 0.9;
+}
+
+/* Corpo do Formulário / Conteúdo */
+.order-form, .home-content {
+  padding: 30px;
+}
+
+/* ==========================================================================
+   3. ESTILOS EXCLUSIVOS DA PÁGINA INICIAL (HOME)
+   ========================================================================== */
+.home-container {
+  max-width: 500px; /* A tela inicial fica mais elegante sendo um pouco mais estreita */
+  text-align: center;
+}
+
+.logo-wrapper {
+  margin-bottom: 15px;
+}
+
+.main-logo {
+  max-width: 120px;
+  height: auto;
+  border-radius: 50%;
+  background: #FFFFFF;
+  padding: 5px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+
+.welcome-text {
+  font-size: 1.1rem;
+  color: #555555;
+  margin-bottom: 30px;
+}
+
+/* Estilização do Link como Botão */
+.btn-start {
+  display: inline-block;
+  text-decoration: none;
+}
+
+/* ==========================================================================
+   4. SEÇÕES DE SELEÇÃO (Para a página de pedido.jsp)
+   ========================================================================== */
+.section-title {
+  font-size: 1.3rem;
+  color: #3B0D47;
+  margin-bottom: 15px;
+  border-left: 4px solid #5A186F;
+  padding-left: 10px;
+}
+
+.step-section {
+  margin-bottom: 35px;
+}
+
+.options-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 15px;
+}
+
+.option-card {
+  position: relative;
+}
+
+.option-card input[type="radio"],
+.option-card input[type="checkbox"] {
+  position: absolute;
+  opacity: 0;
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+  z-index: 2;
+}
+
+.option-label {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  border: 2px solid #E0E0E0;
+  border-radius: 12px;
+  text-align: center;
+  transition: all 0.25s ease;
+  background: #FFFFFF;
+  font-weight: 600;
+  height: 100%;
+}
+
+.option-card:hover .option-label {
+  border-color: #5A186F;
+  transform: translateY(-2px);
+}
+
+.option-card input:checked + .option-label {
+  border-color: #3B0D47;
+  background-color: #F9F2FA;
+  color: #3B0D47;
+  box-shadow: 0 4px 10px rgba(90, 24, 111, 0.15);
+}
+
+/* ==========================================================================
+   5. BOTÕES DE AÇÃO EÁREA DE ENVIO
+   ========================================================================== */
+.checkout-section {
+  background-color: #FAFAFA;
+  border-top: 1px solid #EEEEEE;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.btn-submit {
+  width: 100%;
+  max-width: 350px;
+  background-color: #2ED573; /* Verde açaí/comida */
+  color: #FFFFFF;
+  border: none;
+  padding: 16px 32px;
+  font-size: 1.2rem;
+  font-weight: 700;
+  border-radius: 30px;
+  cursor: pointer;
+  box-shadow: 0 4px 12px rgba(46, 213, 115, 0.3);
+  transition: all 0.2s ease;
+  text-align: center;
+}
+
+.btn-submit:hover {
+  background-color: #26AF5F;
+  transform: translateY(-1px);
+  box-shadow: 0 6px 15px rgba(46, 213, 115, 0.4);
+}
+
+.btn-submit:active {
+  transform: translateY(1px);
+}
