@@ -28,8 +28,16 @@ public class PedidoController extends HttpServlet {
         //Criando objeto da classe Pedido
         Pedido p = new Pedido(tamanho, acomp, colher, bebida, entrega);
         
+        //Chamada da função que calcula o pedido
+        p.calcularPedido();
+        
         //teste
         System.out.println(p);
+        
+        //Criando atributo para ser encaminhado
+        request.setAttribute("pedido", p);
+        
+        request.getRequestDispatcher("finaliza-pedido.jsp").forward(request, response);
     }
 
     // <editor-fold defaultstate="collapsed" desc="HttpServlet methods. Click on the + sign on the left to edit the code.">

@@ -23,7 +23,7 @@
                     <h3 class="section-title">Tamanho</h3>
                     <div class="options-grid">
                         <div class="option-card">
-                            <input type="radio" id="tamanho1" name="tamanho" value="Pequeno">
+                            <input type="radio" id="tamanho1" name="tamanho" value="Pequeno" required>
                             <label for="tamanho1" class="option-label">Pequeno (300 ml)</label>
                         </div>
                         <div class="option-card">
